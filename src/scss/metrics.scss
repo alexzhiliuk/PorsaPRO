@@ -1,0 +1,147 @@
+.metrics {
+
+
+    filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.05));
+    -webkit-filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.05));
+    background: $colorWhite;
+
+    display: flex;
+
+    @media screen and (max-width: $breakpoint1024) {
+        flex-wrap: wrap;
+    }
+
+    // .metrics__column
+    &__column {
+
+        flex: 1;
+
+        @media screen and (max-width: $breakpoint1024) {
+            flex: 0 0 50%;
+        }
+        @media screen and (max-width: $breakpoint768) {
+            flex: 0 0 100%;
+        }
+
+        &:last-child {
+            flex: 0 0 373px;
+
+            @media screen and (max-width: $breakpoint1024) {
+                flex: 0 0 100%;
+                flex-direction: row;
+            }
+
+            @media screen and (max-width: $breakpoint768) {
+                flex-direction: column;
+            }
+        }
+
+        display: flex;
+        flex-direction: column;
+
+
+        &:first-child {
+            .metrics__counter {
+                border-left: 2px solid $colorBorder;
+
+                @media screen and (max-width: $breakpoint768) {
+                    &:first-child {
+                        border-top: 2px solid $colorBorder;
+                    }
+                }
+            }
+        }
+
+    }
+
+    // .metrics__counter
+    &__counter {
+        padding: 40px;
+        border-right: 2px solid $colorBorder;
+        border-bottom: 2px solid $colorBorder;
+        height: 158px;
+
+        &:first-child {
+            
+            border-top: 2px solid $colorBorder;
+
+            @media screen and (max-width: $breakpoint768) {
+                border-top: none;
+            }
+            
+        }
+
+        @media screen and (max-width: $breakpoint768) {
+            padding: 30px 20px;
+            height: unset;
+            border-left: 2px solid $colorBorder;
+        }
+    }
+
+    // .metrics__value
+    &__value {
+        @include h1;
+    }
+
+    // .metrics__caption
+    &__caption {
+        margin-top: 10px;
+                
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(16px, 2vw, 20px);
+        line-height: 1.2;
+        letter-spacing: 0.88px;
+        color: $colorGray;
+
+    }
+
+    // .metrics__advantage
+    &__advantage {
+        padding: 20px 30px;
+        background: #0353A4;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+
+        border-bottom: 2px solid #1F69B4;
+        &:last-child {
+            border-bottom: none;
+        }
+
+        flex: 1;
+
+        @media screen and (max-width: $breakpoint1024) and (min-width: $breakpoint768) {
+            border-bottom: none;
+
+            border-right: 2px solid #1F69B4;
+            &:last-child {
+                border-right: none;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint768) {
+            padding: 30px 20px;
+            gap: 20px;
+
+            img {
+                width: 32px;
+                height: auto;
+            }
+        }
+    }
+
+    // .metrics__text
+    &__text {
+        
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 145%;
+
+        color: $colorWhite;
+
+    }
+}

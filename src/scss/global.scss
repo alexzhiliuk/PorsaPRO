@@ -63,3 +63,7 @@ button {
     overflow-x: hidden;
 }
 
+.section {
+    margin-top: clamp(40px, 6vw, 100px);
+    margin-bottom: clamp(40px, 6vw, 100px);
+}

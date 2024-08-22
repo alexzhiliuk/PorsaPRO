@@ -60,6 +60,7 @@
             display: block;
             top: -75px;
             margin: 0 -$containerPadding;
+            margin-bottom: -75px;
         }
     }
 
@@ -69,6 +70,7 @@
         padding: 50px 60px;
         background: rgba($color: #002855, $alpha: .8);
         backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
 
         @media screen and (max-width: $breakpoint1200) {
             padding: 40px;
