@@ -31,7 +31,158 @@
     <body>
 
         <!-- Header -->
-        
+        <header class="header">
+    <div class="header__inner container">
+        <div class="header__top">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__logo">
+                <img src="img/header/logo.svg" data-second-src="img/header/logo-black.svg" alt="">
+                <div class="header__logo-text">
+                    Создание эффективного <br>
+                    пространства
+                </div>
+            </div>
+            <div class="header__contacts">
+                <div class="header__phone">
+                    <div class="header__phone-label">Санкт-Петербург</div>
+                    <a href="tel:+78124016426" class="header__phone-value">+7 (812) 401-64-26</a>
+                </div>
+                <div class="header__phone">
+                    <div class="header__phone-label">Москва</div>
+                    <a href="tel:+74954016426" class="header__phone-value">+7 (495) 401-64-26</a>
+                </div>
+            </div>
+            <div class="header__search" style="display: none;">
+                <input type="search" name="q" placeholder="Поиск...">
+                <a class="close-search" href="javascript:void(0)" data-close-search>
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_2070_1584)">
+                        <path d="M20.3125 5.6875L5.6875 20.3125" stroke="#777777" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                        <path d="M20.3125 20.3125L5.6875 5.6875" stroke="#777777" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_2070_1584">
+                        <rect width="26" height="26" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>                        
+                </a>
+            </div>
+            <div class="header__action">
+                <div class="header__icons">
+                    <a href="javascript:void(0)" class="header__icon" data-search>
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.8125 16.8145L23.3317 23.3337" stroke="white" stroke-width="1.5" stroke-linecap="square"/>
+                            <path d="M11.668 18.667C15.534 18.667 18.668 15.533 18.668 11.667C18.668 7.801 15.534 4.66699 11.668 4.66699C7.80198 4.66699 4.66797 7.801 4.66797 11.667C4.66797 15.533 7.80198 18.667 11.668 18.667Z" stroke="white" stroke-width="1.5" stroke-linecap="square"/>
+                        </svg>                        
+                    </a>
+                    <a href="javascript:void(0)" class="header__icon">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.1654 8.16699H5.83203V22.167H22.1654V8.16699Z" stroke="white" stroke-width="1.5" stroke-linecap="square"/>
+                            <path d="M9.33203 8.16667C9.33203 6.92899 9.8237 5.742 10.6989 4.86683C11.574 3.99167 12.761 3.5 13.9987 3.5C15.2364 3.5 16.4234 3.99167 17.2985 4.86683C18.1737 5.742 18.6654 6.92899 18.6654 8.16667" stroke="white" stroke-width="1.5" stroke-linecap="square"/>
+                        </svg>                                              
+                    </a>
+                </div>
+                <a href="#" class="header__btn btn">Отправить запрос </a>
+            </div>
+        </div>
+    
+        <nav class="header__bottom">
+            <ul class="header__list">
+                <li class="header__droplist">
+                    <a href="#" class="header__link">
+                        Продукция
+                        <div class="header__droplist-burger">
+                            <span></span>
+                        </div>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/header/sub-item.svg" alt="">
+                                Медицинская и лабораторная мебель
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/header/sub-item.svg" alt="">
+                                Фармацевтическая мебель и оборудование
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/header/sub-item.svg" alt="">
+                                Торговое оборудование
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/header/sub-item.svg" alt="">
+                                Музейная мебель и оборудование
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="header__link">О компании</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">Условия работы</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">Партнерам</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">Примеры решений</a>
+                </li>
+                <li>
+                    <a href="#" class="header__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mobile-menu container">
+        <div class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li>
+                    <a href="#" class="mobile-menu__link">Каталог</a>
+                </li>
+                <li>
+                    <a href="#" class="mobile-menu__link">О компании</a>
+                </li>
+                <li>
+                    <a href="#" class="mobile-menu__link">Условия работы</a>
+                </li>
+                <li>
+                    <a href="#" class="mobile-menu__link">Партнерам</a>
+                </li>
+                <li>
+                    <a href="#" class="mobile-menu__link">Примеры решений</a>
+                </li>
+                <li>
+                    <a href="#" class="mobile-menu__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu__conacts">
+            <div class="mobile-menu__phone">
+                <div class="mobile-menu__phone-label">Санкт-Петербург</div>
+                <a href="tel:+78124016426" class="mobile-menu__phone-value">+7 (812) 401-64-26</a>
+            </div>
+            <div class="mobile-menu__phone">
+                <div class="mobile-menu__phone-label">Москва</div>
+                <a href="tel:+74954016426" class="mobile-menu__phone-value">+7 (495) 401-64-26</a>
+            </div>
+        </div>
+
+        <a href="#" class="btn mobile-menu__btn">Отправить запрос </a>
+    </div>
+    
+</header>
 
         <main>
             

@@ -14,10 +14,14 @@
 }
 
 .container {
-    max-width: calc($conteinerWidth + 2 * $containerPadding);
+    max-width: calc($conteinerWidth + 4 * $containerPadding);
     width: 100%;
     margin: 0 auto;
-    padding: 0 $containerPadding;
+    padding: 0 calc(2 * $containerPadding);
+
+    @media screen and (max-width: $breakpoint768) {
+        padding: 0 calc($containerPadding);
+    }
 
 }
 
@@ -34,6 +38,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background: $colorBorder;
 }
 
 main {
