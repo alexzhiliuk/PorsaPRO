@@ -28,7 +28,29 @@
         }
     }
 
-    
+    &_scrolled {
+        background: $colorWhite;
+        border-bottom: 1px solid $colorBorder;
+        box-shadow: 0px 4px 20px rgba(144, 153, 193, 0.3);
+
+        .header__icon {
+            svg {
+                path {
+                    stroke: $colorBlack;
+                }
+            }
+        }
+
+        .header__burger {
+
+            span,
+            &::before,
+            &::after {
+                background: $colorBlack;
+            }
+
+        }
+    }
 
     // .header__inner
     &__inner {
