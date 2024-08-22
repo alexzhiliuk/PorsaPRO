@@ -185,7 +185,85 @@
 </header>
 
         <main>
-            
+            <!-- Hero -->
+            <section class="hero">
+    <div class="hero__bg">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/hero/hero.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hero/hero-2.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/hero/hero-3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container hero__inner">
+        <div class="hero__block">
+            <h1 class="hero__title">
+                МЕБЕЛЬ <br>
+                для требовательных отраслей
+            </h1>
+            <div class="hero__list">
+                <ul class="hero__column">
+                    <li>
+                        Медицинские учреждения
+                    </li>
+                    <li>
+                        Лаборатории
+                    </li>
+                    <li>
+                        Фармацевтика
+                    </li>
+                </ul>
+                <ul class="hero__column">
+                    <li>
+                        Ритейл
+                    </li>
+                    <li>
+                        Музеи
+                    </li>
+                    <li>
+                        Спецпроекты
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".hero__bg", {
+      spaceBetween: 0,
+      loop: true,
+      effect: "fade",
+      speed: 1000,
+      fadeEffect: {
+        crossFade: true,
+      },
+
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+
+      
+
+      
+    });
+
+    swiper.on('slideChange', function () {
+        
+        $(`.hero__bg .swiper-slide img`).css("animation", "");
+        $(`.hero__bg .swiper-slide img`).css("animation", "zoom-out 4s ease-in 1s 1 forwards");
+
+    });
+
+  </script>
+        
         </main>
 
         <!-- Footer -->

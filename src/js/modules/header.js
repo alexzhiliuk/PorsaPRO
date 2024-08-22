@@ -22,6 +22,6 @@ $("[data-search]").click(function() {
 })
 $("[data-close-search]").click(function() {
     $(".header__search").hide()
-    $(".header__contacts").show()
+    $(".header__contacts").css("display", "")
     $("[data-search]").show()
 })

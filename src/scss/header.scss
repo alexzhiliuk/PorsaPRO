@@ -4,6 +4,7 @@
     flex-direction: column;
 
     position: fixed;
+    z-index: $headerLayer;
     top: 0;
     left: 0;
     right: 0;
@@ -230,6 +231,16 @@
         margin-left: 35px;
         flex: 1;
 
+        @media screen and (max-width: $breakpoint480) {
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            right: 10px;
+            margin-left: 0;
+
+            translate: 0 100%;
+        }
+
         input {
             padding: 20px;
             
@@ -253,6 +264,10 @@
             &::-webkit-search-cancel-button,
             &::-webkit-search-results-button,
             &::-webkit-search-results-decoration { display: none; }
+
+            @media screen and (max-width: $breakpoint768) {
+                padding: 12px;
+            }
         }
 
         .close-search {
