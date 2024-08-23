@@ -48,7 +48,7 @@
     font-family: $fontPrimary;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: clamp(26px, 3vw, 36px);
     line-height: 125%;
     text-align: center;
     letter-spacing: 0.2px;
