@@ -1,0 +1,147 @@
+.testimonial {
+
+    margin-left: 153px;
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+
+    background: #08449C;
+    padding: 80px;
+
+
+    @media screen and (max-width: $breakpoint992) {
+        padding: 60px;
+        margin-left: 84px;
+    }
+
+    @media screen and (max-width: $breakpoint992) {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 90px;
+        margin-left: 0;
+        gap: 30px;
+    }
+
+
+    // .testimonial__img
+    &__img {
+        width: clamp(315px, 32vw, 500px);
+        flex: 0 0 clamp(315px, 32vw, 500px);
+        margin-left: -233px;
+        position: sticky;
+        top: 192px;
+        left: 0;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        @media screen and (max-width: $breakpoint992) {
+            margin-left: -144px;
+        }
+
+        @media screen and (max-width: $breakpoint992) {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -70px;
+            position: static;
+            max-width: 315px;
+            width: 100%;
+            
+        }
+    
+    }
+
+    // .testimonial__text
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(16px, 2vw, 30px);
+
+        h2 {
+        
+            font-style: normal;
+            font-weight: 400;
+            font-size: clamp(28px, 3.3vw, 40px);
+            line-height: 130%;
+
+
+            color: $colorWhite;
+        }
+
+        p {
+
+            font-style: normal;
+            font-weight: 300;
+            font-size: clamp(16px, 1.7vw, 20px);
+            line-height: 150%;
+
+            letter-spacing: 0.2px;
+
+            color: $colorWhite;
+
+        }
+    }
+
+    // .testimonial__author
+    &__author {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 30px;
+
+        @media screen and (max-width: $breakpoint992) {
+            flex-direction: column;
+            align-items: unset;
+            gap: 10px;
+        }
+    
+
+        &-title {
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: clamp(24px, 3vw, 34px);
+            line-height: 1.2;
+
+            color: $colorWhite;
+
+        }
+
+        &-caption {
+            
+            font-style: normal;
+            font-weight: 200;
+            font-size: clamp(16px, 1.8vw, 20px);
+            line-height: 135%;
+            letter-spacing: 0.2px;
+
+            color: $colorWhite;
+
+            margin-top: 10px;
+
+        }
+        
+    }
+
+    // .testimonial__sign
+    &__sign {
+        flex: 0 1 196px;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        @media screen and (max-width: $breakpoint992) {
+            flex: unset;
+            width: clamp(100px, 13vw, 130px);
+            align-self: flex-end;
+        }
+    }
+
+
+}
