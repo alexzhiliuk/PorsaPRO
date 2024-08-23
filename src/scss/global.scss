@@ -76,6 +76,15 @@ button {
         span {
             color: #08449C;
         }
+
+        &_spb {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            * {
+                @include h2;
+            }
+        }
     }
 }
 
@@ -84,4 +93,30 @@ hr {
     border: none;
     outline: none;
     background: $colorBorder;
+}
+
+.slider-btns {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    &__btn {
+        width: 44px;
+        aspect-ratio: 1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #EFEFEF;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba($color: #08449C, $alpha: 0.2);
+        }
+
+        &.swiper-button-lock {
+            display: flex !important;
+        }
+    }
 }

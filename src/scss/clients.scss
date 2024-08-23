@@ -1,0 +1,44 @@
+
+.clients {
+    border-left: 1px solid $colorBorder;
+
+    .swiper-slide {
+        border-top: 1px solid $colorBorder;
+        border-right: 1px solid $colorBorder;
+        border-bottom: 1px solid $colorBorder;
+        height: 240px !important;
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            img {
+                filter: grayscale(0);
+                -webkit-filter: grayscale(0);
+                scale: 1.15;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint768) {
+            height: 160px !important;
+        }
+    }
+
+    img {
+        max-width: 175px;
+        width: 100%;
+        height: auto;
+
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+
+        transition: all 400ms ease-out;
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
