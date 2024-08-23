@@ -42,3 +42,15 @@
     line-height: 115%;
 
 }
+
+@mixin h2 {
+    
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 125%;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+}

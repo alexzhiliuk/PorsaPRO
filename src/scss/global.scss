@@ -66,4 +66,11 @@ button {
 .section {
     margin-top: clamp(40px, 6vw, 100px);
     margin-bottom: clamp(40px, 6vw, 100px);
+
+    &__title {
+        @include h2;
+        text-align: center;
+
+        margin-bottom: 40px;
+    }
 }
