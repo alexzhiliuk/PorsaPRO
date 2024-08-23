@@ -1,0 +1,69 @@
+.furniture {
+
+    display: flex;
+    justify-content: center;
+    border: 1px solid $colorBorder;
+
+    @media screen and (max-width: $breakpoint768) {
+        flex-wrap: wrap;
+    }
+
+    // .furniture__item
+    &__item {
+        flex: 1 0 25%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        padding: clamp(20px, 3vw, 40px);
+
+        border-right: 1px solid $colorBorder;
+        &:last-child {
+            border-right: none;
+        }
+
+        &:hover {
+            outline: 1px solid #08449C;
+            background: rgba($color: #08449C, $alpha: .05);
+        }
+
+        @media screen and (max-width: $breakpoint768) {
+            flex: 1 0 50%;
+            border-right: unset;
+
+            &:nth-child(odd) {
+                border-right: 1px solid $colorBorder;
+            }
+            &:nth-child(n + 2) {
+                border-top: 1px solid $colorBorder;
+            }
+        }
+
+    }
+
+    // .furniture__img
+    &__img {
+        max-width: 260px;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // .furniture__title
+    &__title {
+        word-break: break-word;
+        text-align: center;
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(16px, 2vw, 20px);
+        line-height: 130%;
+
+        letter-spacing: 0.2px;
+
+    }
+}
