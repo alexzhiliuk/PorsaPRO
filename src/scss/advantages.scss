@@ -29,6 +29,8 @@
         filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.05));
         -webkit-filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.05));
 
+        border: 1px solid $colorBorder;
+
         @media screen and (max-width: $breakpoint768) {
             margin: 0 10px;
         }
@@ -48,17 +50,8 @@
         align-items: center;
         gap: 20px;
 
-        border-right: 1px solid $colorBorder;
-        border-bottom: 1px solid $colorBorder;
+        border: 1px solid $colorBorder;
         
-        &:nth-child(4n + 1) {
-            border-left: 1px solid $colorBorder;
-        }
-        
-        &:nth-child(-n + 4) {
-            border-top: 1px solid $colorBorder;
-        }
-
         @media screen and (max-width: $breakpoint768) {
             flex: 0 0 50%;
             width: 50%;

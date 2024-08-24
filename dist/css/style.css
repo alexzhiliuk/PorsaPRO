@@ -1619,6 +1619,7 @@ hr {
   margin: 0 clamp(30px, 5vw, 60px);
   filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.05));
   -webkit-filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.05));
+  border: 1px solid #E7EDF1;
 }
 @media screen and (max-width: 767.98px) {
   .advantages__items {
@@ -1634,14 +1635,7 @@ hr {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  border-right: 1px solid #E7EDF1;
-  border-bottom: 1px solid #E7EDF1;
-}
-.advantages__item:nth-child(4n+1) {
-  border-left: 1px solid #E7EDF1;
-}
-.advantages__item:nth-child(-n+4) {
-  border-top: 1px solid #E7EDF1;
+  border: 1px solid #E7EDF1;
 }
 @media screen and (max-width: 767.98px) {
   .advantages__item {
@@ -1848,7 +1842,7 @@ hr {
   .furniture__item:nth-child(odd) {
     border-right: 1px solid #E7EDF1;
   }
-  .furniture__item:nth-child(n+2) {
+  .furniture__item:nth-child(n+3) {
     border-top: 1px solid #E7EDF1;
   }
 }

@@ -36,7 +36,7 @@
             &:nth-child(odd) {
                 border-right: 1px solid $colorBorder;
             }
-            &:nth-child(n + 2) {
+            &:nth-child(n + 3) {
                 border-top: 1px solid $colorBorder;
             }
         }
