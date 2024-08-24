@@ -57,8 +57,9 @@
 </footer>
 
 <script>
-    let isSeparated = false
-    $(window).resize(function() {
+    let isSeparated
+
+    function separateFooterNav() {
         let width = window.innerWidth
 
         if (width <= 1200 && width >= 768) {
@@ -96,5 +97,11 @@
 
             
         }
+    }
+    
+    $(window).resize(function() {
+        separateFooterNav()
     })
+
+    separateFooterNav()
 </script>

@@ -497,6 +497,12 @@ hr {
 .header_scrolled .header__burger span, .header_scrolled .header__burger::before, .header_scrolled .header__burger::after {
   background: #000000;
 }
+.header_scrolled .header__logo-text, .header_scrolled .footer__logo-text {
+  color: #000000;
+}
+.header_scrolled .header__logo-text::before, .header_scrolled .footer__logo-text::before {
+  background: #000000;
+}
 .header_scrolled .header__phone-label, .header_scrolled .footer__phone-label {
   color: #8C8C8C;
 }
@@ -731,6 +737,29 @@ hr {
   height: 56px;
   width: 56px;
   flex-shrink: 0;
+  position: relative;
+}
+.header__icon:hover {
+  background: rgba(231, 237, 241, 0.2);
+}
+.header__icon[data-notifications]::before {
+  content: attr(data-notifications);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 16px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #E3181E;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  translate: calc(50% + 9px) calc(50% + 7px);
 }
 @media screen and (max-width: 767.98px) {
   .header__icon {
