@@ -1,0 +1,9 @@
+<svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.5" d="M5.04169 25.0001C5.04169 15.1792 5.04169 10.2687 8.09266 7.21772C11.1436 4.16675 16.0541 4.16675 25.875 4.16675C35.6959 4.16675 40.6064 4.16675 43.6574 7.21772C46.7084 10.2687 46.7084 15.1792 46.7084 25.0001C46.7084 34.821 46.7084 39.7315 43.6574 42.7824C40.6064 45.8334 35.6959 45.8334 25.875 45.8334C16.0541 45.8334 11.1436 45.8334 8.09266 42.7824C5.04169 39.7315 5.04169 34.821 5.04169 25.0001Z" stroke="#E3181E" stroke-width="3"/>
+<circle cx="17.5417" cy="20.8334" r="4.16667" stroke="#E3181E" stroke-width="3"/>
+<ellipse cx="4.16667" cy="4.16667" rx="4.16667" ry="4.16667" transform="matrix(1 0 0 -1 30.0417 33.3333)" stroke="#E3181E" stroke-width="3"/>
+<path d="M17.5417 29.1667V39.5834" stroke="#E3181E" stroke-width="3" stroke-linecap="round"/>
+<path d="M34.2083 20.8333V10.4166" stroke="#E3181E" stroke-width="3" stroke-linecap="round"/>
+<path d="M17.5417 10.4167V12.5001" stroke="#E3181E" stroke-width="3" stroke-linecap="round"/>
+<path d="M34.2083 39.5833V37.4999" stroke="#E3181E" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -80,12 +80,7 @@
     &__title {
 
         
-        font-style: normal;
-        font-weight: 400;
-        font-size: clamp(14px, 1.8vw, 18px);
-        line-height: 135%;
-
-        letter-spacing: 0.5px;
+        @include cardText;
         text-align: center;
         word-break: break-word;
     }
