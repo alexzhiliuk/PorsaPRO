@@ -1,0 +1,271 @@
+.footer {
+
+    // .footer__top
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: clamp(40px, 7vw, 124px);
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            height: 1px;
+            background: $colorBorder;
+
+            position: absolute;
+            top: 0;
+            left: calc(-1 * (100vw - 100%) / 2);
+            right: calc(-1 * (100vw - 100%) / 2);
+        }
+        &::after {
+            content: '';
+            display: block;
+            height: 1px;
+            background: $colorBorder;
+
+            position: absolute;
+            bottom: 0;
+            left: calc(-1 * (100vw - 100%) / 2);
+            right: calc(-1 * (100vw - 100%) / 2);
+        }
+
+        @media screen and (max-width: $breakpoint1200) {
+            flex-wrap: wrap;
+            gap: 0;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        @media screen and (max-width: $breakpoint768) {
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+    }
+
+    // .footer__logo
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        flex-shrink: 0;
+
+        img {
+            width: clamp(160px, 25vw, 250px);
+            height: auto;
+        }
+
+        position: relative;
+        padding-right: clamp(40px, 7vw, 124px);
+
+        @media screen and (max-width: $breakpoint1200) {
+            flex: 0 0 100%;
+            padding-right: 0;
+            padding-bottom: 40px;
+
+            &::before {
+                content: '';
+                display: block;
+                height: 1px;
+                background: $colorBorder;
+    
+                position: absolute;
+                bottom: 0;
+                left: calc(-1 * (100vw - 100%) / 2);
+                right: calc(-1 * (100vw - 100%) / 2);
+            }
+        }
+
+        @media screen and (max-width: $breakpoint768) {
+            padding-bottom: 24px;
+        }
+    }
+
+    // .footer__logo-text
+    &__logo-text {
+        @extend .header__logo-text;
+
+        color: $colorBlack;
+        &::before {
+            background: $colorBorder;
+
+            @media screen and (max-width: $breakpoint1270) {
+                display: block;
+            }
+            @media screen and (max-width: $breakpoint576) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint1270) {
+            display: block;
+        }
+        @media screen and (max-width: $breakpoint576) {
+            display: none;
+        }
+    }
+
+    // .footer__nav
+    &__nav {
+        display: flex;
+        gap: 50px;
+        
+        flex-shrink: 0;
+
+        @media screen and (max-width: $breakpoint1200) {
+            flex: 0 0 50%;
+            padding-top: 40px;
+
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                width: 1px;
+                background: $colorBorder;
+    
+                position: absolute;
+                bottom: -40px;
+                top: 0;
+                right: 0;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint768) {
+            flex: 0 0 100%;
+            padding-bottom: 24px;
+            padding-top: 24px;
+
+            &::before {
+                width: unset;
+                height: 1px;
+    
+                position: absolute;
+                top: unset;
+                bottom: 0;
+                left: calc(-1 * (100vw - 100%) / 2);
+                right: calc(-1 * (100vw - 100%) / 2);
+            }
+        }
+    }
+
+    // .footer__nav-col
+    &__nav-col {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (max-width: $breakpoint768) {
+            gap: 16px;
+        }
+    }
+
+    // .footer__link
+    &__link {
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.2px;
+
+        @media screen and (max-width: $breakpoint768) {
+            font-size: 14px;
+        }
+
+    }
+
+    // .footer__contacts
+    &__contacts {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        @media screen and (max-width: $breakpoint1200) {
+            flex: 0 0 50%;
+            padding-top: 40px;
+        }
+        @media screen and (max-width: $breakpoint768) {
+            flex: 0 0 100%;
+            padding-top: 24px;
+            justify-content: flex-start;
+            row-gap: 30px;
+            column-gap: 24px;
+        }
+    }
+
+    // .footer__phone
+    &__phone {
+        @extend .header__phone;
+        gap: 16px;
+
+        &_100 {
+            flex: 0 0 100%;
+        }
+    }
+
+    // .footer__phone-label
+    &__phone-label {
+        @extend .header__phone-label;
+        color: #8C8C8C;
+        text-align: right;
+
+        @media screen and (max-width: $breakpoint768) {
+            text-align: left;
+            font-size: 14px;
+        }
+    }
+
+    // .footer__phone-value
+    &__phone-value {
+        @extend .header__phone-value;
+        color: $colorBlack;
+        text-align: right;
+
+        @media screen and (max-width: $breakpoint768) {
+            text-align: left;
+            font-size: 14px;
+        }
+    }
+}
+
+
+.copyright {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    padding: 30px 0;
+
+    & * {
+        
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: .93;
+
+        color: #646464;
+
+    }
+
+    // .copyright__copy
+    &__copy {
+    }
+
+    // .copyright__list
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 10px;
+    }
+}

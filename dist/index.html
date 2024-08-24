@@ -699,7 +699,7 @@
 
     </div>
 </section>
-            
+
             <!-- Clients -->
             <section class="section container">
     <div class="section__title section__title_spb">
@@ -743,7 +743,106 @@
         </main>
 
         <!-- Footer -->
-        
+        <footer class="footer container">
+    <div class="footer__top">
+        <div class="footer__logo">
+            <img src="img/footer/logo.svg"alt="">
+                <div class="footer__logo-text">
+                    Создание эффективного <br>
+                    пространства
+                </div>
+        </div>
+        <nav class="footer__nav">
+            <ul class="footer__nav-col">
+                <li>
+                    <a href="#" class="footer__link">Каталог</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">О компании</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">Условия работы</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">Партнерам</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">Примеры решений</a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer__contacts">
+            <div class="footer__phone">
+                <div class="footer__phone-label">Санкт-Петербург</div>
+                <a href="tel:+78124016426" class="footer__phone-value">+7 (812) 401-64-26</a>
+            </div>
+            <div class="footer__phone">
+                <div class="footer__phone-label">Москва</div>
+                <a href="tel:+74954016426" class="footer__phone-value">+7 (495) 401-64-26</a>
+            </div>
+            <div class="footer__phone footer__phone_100">
+                <a href="maito:example@mail.ru" class="footer__phone-value">example@mail.ru</a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="copyright__copy">© 2024 «Porsa» All rights reserved</div>
+        <ul class="copyright__list">
+            <li>
+                <a href="#">Политика конфиденциальности</a>
+            </li>
+            <li>
+                <a href="#">Пользовательское соглашение</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    let isSeparated = false
+    $(window).resize(function() {
+        let width = window.innerWidth
+
+        if (width <= 1200 && width >= 768) {
+            if (isSeparated) { return }
+            let items = $(".footer__nav-col li")
+            $(".footer__nav-col").remove()
+
+            for (let i = 0; i < Math.ceil(items.length / 3); i++) {
+                
+                let col = $('<ul class="footer__nav-col"></ul>')
+                items.slice(i * 3, i * 3 + 3).each(function(i, el) {
+                    col.append(el)
+                })
+                
+                $(".footer__nav").append(col)
+            }
+
+            isSeparated = true
+
+        } else {
+
+            if (!isSeparated) { return }
+
+            let items = $(".footer__nav-col li")
+            $(".footer__nav-col").remove()
+
+            let col = $('<ul class="footer__nav-col"></ul>')
+            items.each(function(i, el) {
+                col.append(el)
+            })
+            
+            $(".footer__nav").append(col)
+
+            isSeparated = false
+
+            
+        }
+    })
+</script>
 
         <script src="js/app.min.js"></script>
     </body>
