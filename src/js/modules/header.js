@@ -11,6 +11,7 @@ function changeLogo(toColor) {
 }
 
 $(".header__burger").click(function() {
+    console.log("click")
     
     $(this).toggleClass("header__burger_active")
 
