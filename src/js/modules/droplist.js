@@ -9,3 +9,8 @@ $(window).click(function() {
 $('.header__droplist').click(function(event){
     event.stopPropagation();
 });
+
+
+$(".mobile-menu__droplist").click(function() {
+    $(this).toggleClass("mobile-menu__droplist_active")
+})
