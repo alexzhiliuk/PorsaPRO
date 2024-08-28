@@ -30,7 +30,7 @@
     // .production__card
     &__card {
         border: 1px solid $colorBorder;
-        padding: 20px;
+        padding: clamp(20px, 4vw, 40px);
 
         display: flex;
         flex-direction: column;

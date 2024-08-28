@@ -746,14 +746,14 @@ hr {
   content: attr(data-notifications);
   font-style: normal;
   font-weight: 600;
-  font-size: 8px;
-  line-height: 16px;
+  font-size: 10px;
+  line-height: 1;
   color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 13px;
-  height: 13px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   background: #E3181E;
   position: absolute;
@@ -788,7 +788,9 @@ hr {
   flex: 1;
 }
 .header__list > li:first-child .header__link {
-  border-left: 1px solid #E7EDF1;
+  border-left: none;
+  border-top: none;
+  height: 100%;
 }
 .header__link {
   font-family: "Inter";
@@ -813,19 +815,19 @@ hr {
 .header__droplist {
   position: relative;
 }
-.header__droplist .header__link {
+.header__droplist:not(.header__droplist_hover) .header__link {
   padding: 22px 20px;
   justify-content: space-between;
   background: #E7EDF1;
 }
-.header__droplist .header__link:hover {
+.header__droplist:not(.header__droplist_hover) .header__link:hover {
   background: #B2C5D1;
 }
 .header__droplist ul {
   display: none;
   position: absolute;
   top: 100%;
-  left: 1px;
+  left: 0;
   right: 1px;
 }
 .header__droplist ul li {
@@ -852,22 +854,22 @@ hr {
 .header__droplist ul a:hover {
   background: #B2C5D1;
 }
-.header__droplist_active .header__link {
+.header__droplist_active .header__link, .header__droplist_hover:hover .header__link {
   background: #B2C5D1;
 }
-.header__droplist_active ul {
+.header__droplist_active ul, .header__droplist_hover:hover ul {
   display: flex;
   flex-direction: column;
 }
-.header__droplist_active .header__droplist-burger span {
+.header__droplist_active .header__droplist-burger span, .header__droplist_hover:hover .header__droplist-burger span {
   opacity: 0;
 }
-.header__droplist_active .header__droplist-burger::before {
+.header__droplist_active .header__droplist-burger::before, .header__droplist_hover:hover .header__droplist-burger::before {
   translate: 0 -50%;
   top: 50%;
   rotate: 45deg;
 }
-.header__droplist_active .header__droplist-burger::after {
+.header__droplist_active .header__droplist-burger::after, .header__droplist_hover:hover .header__droplist-burger::after {
   translate: 0 50%;
   bottom: 50%;
   rotate: -45deg;
@@ -1286,6 +1288,7 @@ hr {
 }
 .hero {
   height: 767px;
+  max-height: 95vh;
   overflow: hidden;
   position: relative;
 }
@@ -1297,6 +1300,7 @@ hr {
 @media screen and (max-width: 767.98px) {
   .hero {
     height: unset;
+    max-height: unset;
   }
 }
 .hero__bg {
@@ -1318,6 +1322,12 @@ hr {
   .hero__bg {
     position: static;
     height: 475px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .hero__bg {
+    position: static;
+    height: 355px;
   }
 }
 .hero__inner {
@@ -1561,9 +1571,6 @@ hr {
 .products__item:hover::before {
   opacity: 1;
   z-index: 1;
-}
-.products__item:hover .products__title {
-  text-align: left;
 }
 .products__item:hover .products__info {
   grid-template-rows: 1fr;
@@ -1970,7 +1977,7 @@ hr {
 }
 .production__card {
   border: 1px solid #E7EDF1;
-  padding: 20px;
+  padding: clamp(20px, 4vw, 40px);
   display: flex;
   flex-direction: column;
   align-items: center;

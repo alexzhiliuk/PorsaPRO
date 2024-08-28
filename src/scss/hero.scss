@@ -10,6 +10,7 @@
 .hero {
 
     height: 767px;
+    max-height: 95vh;
     overflow: hidden;
     position: relative;
 
@@ -18,6 +19,7 @@
     }
     @media screen and (max-width: $breakpoint768) {
         height: unset;
+        max-height: unset;
     }
 
     // .hero__bg
@@ -42,6 +44,11 @@
         @media screen and (max-width: $breakpoint768) {
             position: static;
             height: 475px;
+        }
+
+        @media screen and (max-width: $breakpoint576) {
+            position: static;
+            height: 355px;
         }
 
         
