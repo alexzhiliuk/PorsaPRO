@@ -33,6 +33,11 @@
         border-bottom: 1px solid $colorBorder;
         box-shadow: 0px 4px 20px rgba(144, 153, 193, 0.3);
 
+        .header__inner {
+            padding-top: 15px;
+            gap: 15px;
+        }
+
         .header__icon {
             svg {
                 path {

@@ -491,6 +491,10 @@ hr {
   border-bottom: 1px solid #E7EDF1;
   box-shadow: 0px 4px 20px rgba(144, 153, 193, 0.3);
 }
+.header_scrolled .header__inner {
+  padding-top: 15px;
+  gap: 15px;
+}
 .header_scrolled .header__icon svg path {
   stroke: #000000;
 }
@@ -1288,7 +1292,7 @@ hr {
 }
 .hero {
   height: 767px;
-  max-height: 95vh;
+  max-height: 75vh;
   overflow: hidden;
   position: relative;
 }
@@ -1574,6 +1578,7 @@ hr {
 }
 .products__item:hover .products__info {
   grid-template-rows: 1fr;
+  transition: all 400ms ease-out;
 }
 .products__item:hover .products__block {
   height: unset;
@@ -1630,7 +1635,7 @@ hr {
   display: grid;
   grid-template-rows: 0fr;
   overflow: hidden;
-  transition: all 400ms ease-out;
+  transition: unset;
 }
 .products__wrapper {
   overflow: hidden;
@@ -1934,6 +1939,9 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.clients .swiper-slide:hover {
+  border: 1px solid #08449C;
 }
 .clients .swiper-slide:hover img {
   filter: grayscale(0);
