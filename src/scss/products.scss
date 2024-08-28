@@ -100,7 +100,7 @@
         
         font-style: normal;
         font-weight: 500;
-        font-size: clamp(14px, 1.5vw, 22px);
+        font-size: clamp(14px, 1vw, 22px);
         line-height: 125%;
 
         text-align: center;
@@ -127,7 +127,7 @@
 
         font-style: normal;
         font-weight: 400;
-        font-size: clamp(12px, 1.8vw, 18px);
+        font-size: clamp(12px, 1.2vw, 18px);
         line-height: 1.33;
         letter-spacing: 0.2px;
         color: $colorWhite;
