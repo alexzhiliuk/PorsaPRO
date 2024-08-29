@@ -38,6 +38,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media screen and (min-width: $breakpoint1024) and (max-width: $breakpoint1400) {
+        zoom: .9;
+        min-width: calc(100vw / 0.9);
+    }
 }
 
 main {

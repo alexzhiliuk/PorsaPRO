@@ -11,6 +11,7 @@
 
     height: 767px;
     max-height: 80vh;
+    min-height: 525px;
     overflow: hidden;
     position: relative;
 
@@ -20,6 +21,7 @@
     @media screen and (max-width: $breakpoint768) {
         height: unset;
         max-height: unset;
+        min-height: unset;
     }
 
     // .hero__bg
