@@ -1549,7 +1549,7 @@ hr {
 }
 .products__item {
   flex: 1;
-  height: clamp(240px, 39vw, 600px);
+  height: clamp(240px, 35vw, 600px);
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -1591,6 +1591,11 @@ hr {
     flex: 0 0 calc(50% - 1px);
   }
 }
+@media screen and (min-width: 991.98px) and (max-width: 1199.98px) {
+  .products__item {
+    height: clamp(240px, 30vw, 600px);
+  }
+}
 .products__img {
   position: absolute;
   z-index: 0;
@@ -1626,10 +1631,11 @@ hr {
 .products__title {
   font-style: normal;
   font-weight: 500;
-  font-size: clamp(14px, 1vw, 22px);
+  font-size: clamp(14px, 1.2vw, 22px);
   line-height: 125%;
   text-align: center;
   color: #FFFFFF;
+  word-break: break-word;
 }
 .products__info {
   display: grid;
@@ -1644,11 +1650,12 @@ hr {
   margin-top: 12px;
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(12px, 1.2vw, 18px);
+  font-size: clamp(12px, 1vw, 18px);
   line-height: 1.33;
   letter-spacing: 0.2px;
   color: #FFFFFF;
   opacity: 0.8;
+  word-break: break-word;
 }
 .products__arrow {
   margin-top: 24px;
@@ -1810,7 +1817,7 @@ hr {
 .testimonial__text {
   display: flex;
   flex-direction: column;
-  gap: clamp(16px, 2vw, 30px);
+  gap: clamp(16px, 1.6vw, 30px);
 }
 .testimonial__text h2 {
   font-style: normal;
