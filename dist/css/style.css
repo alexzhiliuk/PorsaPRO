@@ -365,7 +365,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (min-width: 1023.98px) and (max-width: 1399.98px) {
+@media screen and (min-width: 767.98px) {
   body {
     zoom: 0.9;
     min-width: 111.1111111111vw;

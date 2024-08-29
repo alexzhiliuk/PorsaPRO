@@ -39,7 +39,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    @media screen and (min-width: $breakpoint1024) and (max-width: $breakpoint1400) {
+    @media screen and (min-width: $breakpoint768) {
         zoom: .9;
         min-width: calc(100vw / 0.9);
     }
