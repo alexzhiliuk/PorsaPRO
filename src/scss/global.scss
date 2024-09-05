@@ -39,10 +39,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    @media screen and (min-width: $breakpoint768) {
-        zoom: .9;
-        min-width: calc(100vw / 0.9);
-    }
 }
 
 main {
@@ -69,8 +65,8 @@ button {
 }
 
 .section {
-    margin-top: clamp(40px, 6vw, 100px);
-    margin-bottom: clamp(40px, 6vw, 100px);
+    margin-top: clamp(40px, 6vw, 80px);
+    margin-bottom: clamp(40px, 6vw, 80px);
 
     &__title {
         @include h2;

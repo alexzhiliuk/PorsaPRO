@@ -4,11 +4,11 @@
     &__img {
 
         width: 100%;
-        margin-bottom: max(-247px, -16vw);
+        margin-bottom: max(-247px, -19vw);
 
         @media screen and (max-width: $breakpoint768) {
             height: 300px;
-            margin-bottom: -160px;
+            margin-bottom: -210px;
         }
 
         img {

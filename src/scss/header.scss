@@ -33,9 +33,17 @@
         border-bottom: 1px solid $colorBorder;
         box-shadow: 0px 4px 20px rgba(144, 153, 193, 0.3);
 
+        @media screen and (min-width: $breakpoint1024) {
+            top: -86px;
+        }
+
         .header__inner {
             padding-top: 15px;
             gap: 15px;
+            
+            @media screen and (max-width: $breakpoint1024) {
+                padding-bottom: 15px;
+            }
         }
 
         .header__icon {
@@ -69,6 +77,10 @@
         }
         .header__phone-value {
             color: $colorBlack;
+        }
+
+        .header__list .header__logo {
+            display: block;
         }
     }
 
@@ -425,6 +437,18 @@
                 }
             }
         }
+
+        .header__logo {
+            display: none;
+
+            a {
+                padding: 0 20px 0 0;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
     }
 
     // .header__link
@@ -435,7 +459,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 22px 0;
+        // padding: 22px 0;
+        height: 61px;
         background: $colorWhite;
         border-top: 1px solid $colorBorder;
         border-right: 1px solid $colorBorder;

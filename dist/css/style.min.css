@@ -365,12 +365,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (min-width: 767.98px) {
-  body {
-    zoom: 0.9;
-    min-width: 111.1111111111vw;
-  }
-}
 
 ul, ol {
   list-style-type: none;
@@ -392,8 +386,8 @@ button {
 }
 
 .section {
-  margin-top: clamp(40px, 6vw, 100px);
-  margin-bottom: clamp(40px, 6vw, 100px);
+  margin-top: clamp(40px, 6vw, 80px);
+  margin-bottom: clamp(40px, 6vw, 80px);
 }
 .section__title {
   font-family: "Inter";
@@ -497,9 +491,19 @@ hr {
   border-bottom: 1px solid #E7EDF1;
   box-shadow: 0px 4px 20px rgba(144, 153, 193, 0.3);
 }
+@media screen and (min-width: 1023.98px) {
+  .header_scrolled {
+    top: -86px;
+  }
+}
 .header_scrolled .header__inner {
   padding-top: 15px;
   gap: 15px;
+}
+@media screen and (max-width: 1023.98px) {
+  .header_scrolled .header__inner {
+    padding-bottom: 15px;
+  }
 }
 .header_scrolled .header__icon svg path {
   stroke: #000000;
@@ -518,6 +522,9 @@ hr {
 }
 .header_scrolled .header__phone-value, .header_scrolled .footer__phone-value {
   color: #000000;
+}
+.header_scrolled .header__list .header__logo {
+  display: block;
 }
 .header__inner {
   display: flex;
@@ -802,6 +809,15 @@ hr {
   border-top: none;
   height: 100%;
 }
+.header__list .header__logo {
+  display: none;
+}
+.header__list .header__logo a {
+  padding: 0 20px 0 0;
+}
+.header__list .header__logo img {
+  width: 100%;
+}
 .header__link {
   font-family: "Inter";
   font-style: normal;
@@ -814,7 +830,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 22px 0;
+  height: 61px;
   background: #FFFFFF;
   border-top: 1px solid #E7EDF1;
   border-right: 1px solid #E7EDF1;
@@ -1557,7 +1573,7 @@ hr {
 }
 .products__item {
   flex: 1;
-  height: clamp(240px, 35vw, 600px);
+  height: clamp(240px, 32vw, 540px);
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -1678,12 +1694,12 @@ hr {
 
 .advantages__img {
   width: 100%;
-  margin-bottom: max(-247px, -16vw);
+  margin-bottom: max(-247px, -19vw);
 }
 @media screen and (max-width: 767.98px) {
   .advantages__img {
     height: 300px;
-    margin-bottom: -160px;
+    margin-bottom: -210px;
   }
 }
 .advantages__img img {
@@ -1903,7 +1919,7 @@ hr {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  padding: clamp(20px, 3vw, 40px);
+  padding: clamp(26px, 3vw, 30px);
   border-right: 1px solid #E7EDF1;
 }
 .furniture__item:last-child {
