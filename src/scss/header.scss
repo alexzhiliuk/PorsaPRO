@@ -524,6 +524,12 @@
                     background: #B2C5D1;
                 }
             }
+
+            img {
+                @media screen and (max-width: $breakpoint1440) {
+                    display: none;
+                }
+            }
         }
 
         &_active,

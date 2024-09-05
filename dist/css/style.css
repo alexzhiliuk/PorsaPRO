@@ -881,6 +881,11 @@ hr {
 .header__droplist ul a:hover {
   background: #B2C5D1;
 }
+@media screen and (max-width: 1439.98px) {
+  .header__droplist ul img {
+    display: none;
+  }
+}
 .header__droplist_active .header__link, .header__droplist_hover:hover .header__link {
   background: #B2C5D1;
 }
