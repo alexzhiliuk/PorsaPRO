@@ -830,6 +830,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   height: 61px;
   background: #FFFFFF;
   border-top: 1px solid #E7EDF1;
